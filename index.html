@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe AI Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="light">
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="controls">
+      <input type="text" id="playerX" placeholder="Player X Name" />
+      <input type="text" id="playerO" placeholder="Player O / AI Name" />
+      
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <select id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="retro">Retro</option>
+      </select>
+
+      <button id="toggleMode">Play vs AI</button>
+      <button id="muteBtn">🔊</button>
+    </div>
+
+    <div id="scoreboard">
+      <p><span id="nameX">X</span>: <span id="scoreX">0</span></p>
+      <p><span id="nameO">O</span>: <span id="scoreO">0</span></p>
+      <p>Draws: <span id="draws">0</span></p>
+    </div>
+
+    <div id="game" class="board"></div>
+
+    <div class="footer">
+      <p id="status">Let's play!</p>
+      <p id="timer">⏱️ 10s</p>
+      <button id="undoBtn">Undo</button>
+      <button id="restartBtn">Restart</button>
+      <button id="shareBtn">Share Result</button>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+  <audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/6678" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
